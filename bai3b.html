@@ -6,15 +6,18 @@
 </head>
 <body>
 <script>
-let a = 0
-let b = 1
-let text;
-for(i=0;i<20;i++){
-    text = a+b
-    a=b;
-    b=text;
-    document.write(text+'<br>');
-}
+    let a = 0
+    let b = 1
+    let total;
+    let count = 0;
+    while (count<20){
+        total = a +b ;
+        a = b ;
+        b = total ;
+        document.write(total + '<br>');
+        count++;
+    }
+
 
 </script>
 </body>
